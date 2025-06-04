@@ -5,6 +5,6 @@ sceneTreePerspectives: 000000ff00000001000000030000001e000002ae000000fa010000000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 0 "controllers/Line_following_with_HIL/Line_following_with_HIL.py"
+textFiles: 0 "controllers/Webots_Code_Explained/Webots_Code_Explained.py"
 consoles: Console:All:All
 renderingDevicePerspectives: e-puck:camera;1;32;0;0

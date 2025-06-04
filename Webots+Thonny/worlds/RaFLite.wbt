@@ -5,12 +5,13 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.5284720077016603 0.2856129293985591 -0.7994639401725071 2.257422225329886
-  position 0.5036617682307125 1.081086023374199 2.2462367659889506
+  orientation 0.402727667090229 0.18588148405820928 -0.8962468968115758 2.2668535311083464
+  position 1.1046058028997492 1.6351283181635454 2.134923403749968
   follow "e-puck"
 }
 TexturedBackground {
@@ -31,10 +32,14 @@ RectangleArena {
     metalness 0
   }
 }
+WoodenBox {
+  translation -0.29 0 0.05
+  size 0.1 0.1 0.1
+}
 DEF E_PUCK E-puck {
-  translation 0.498 -0.370244 -0.000156458
+  translation 0.188 -0.370244 -0.000155559
   rotation 0.0012131994317801376 -0.0012103194331290275 0.9999985316359263 1.5708
-  controller "Line_following_with_HIL"
+  controller "Webots_Code_Explained"
   window "botstudio"
   camera_width 40
   camera_height 1
