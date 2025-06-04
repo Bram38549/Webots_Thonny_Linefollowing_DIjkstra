@@ -54,7 +54,7 @@ class PathPlannerESP32: # Defines the main class for the ESP32 path planner
         self.no_intersection_counter = 0 # Counter to debounce intersection counter reset
         self.turn_target_heading = 0 # Stores the target heading for a turn
         self.line_search_counter = 0 # Counter used during post-turn line searching
-        self.intersection_processed = False # Flag to prevent double processing of the same intersection
+        self.intersection_processed = False # Flag to prevent double processing of the same intersection, this prevents that the intersetion will be detected twice in a row and then skip a node
         
         # Timing
         self.last_update = ticks_ms() # Stores the timestamp of the last update

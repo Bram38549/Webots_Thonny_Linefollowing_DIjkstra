@@ -54,7 +54,7 @@ class PathPlannerESP32:
         self.no_intersection_counter = 0 # New: to debounce intersection counter reset
         self.turn_target_heading = 0
         self.line_search_counter = 0
-        self.intersection_processed = False # New flag to prevent double processing of same intersection
+        self.intersection_processed = False # flag to prevent double processing of same intersection
         
         # Timing
         self.last_update = ticks_ms()
