@@ -86,8 +86,7 @@ class WebotsHILController:
         G = nx.Graph()  # Creates an empty undirected graph using NetworkX.
         # Referencing the grid_map from A_algorthim.py to create edges for visualization
         # This needs to be a hardcoded representation of your map structure for visualization
-        # if you don't want to parse A_algorthim.py's content directly.
-        # Ensure these match the _init_grid_map in A_algorthim.py
+        # Make sure that these match the _init_grid_map in A_algorthim.py
         edges = [  # Defines a list of tuples, where each tuple represents an edge between two nodes.
             ("P1", "A1"), ("P2", "A2"), ("P3", "A3"), ("P4", "A4"),
             ("P5", "E3"), ("P6", "E4"), ("P7", "E5"), ("P8", "E6"),
