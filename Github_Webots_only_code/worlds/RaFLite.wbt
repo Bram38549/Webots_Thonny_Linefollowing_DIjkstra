@@ -1,0 +1,64 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+  basicTimeStep 15
+}
+Viewpoint {
+  orientation -0.33721049434441935 0.5715896362430505 0.748047037453882 1.4351120778093713
+  position -0.5028656369896818 -1.2613690788914917 1.6777908902544667
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_countryside"
+}
+RectangleArena {
+  translation 0.0370589 -0.0144154 0
+  floorSize 1.2 0.8
+  floorTileSize 1.2 0.8
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/RaFLite_track.png"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+WoodenBox {
+  translation 0.325239 -0.15763 0.01
+  size 0 0 0
+}
+WoodenBox {
+  translation -0.13864 -0.02791 0.03
+  name "wooden box(14)"
+  size 0.08 0.08 0.07
+}
+WoodenBox {
+  translation 0.311515 -0.135405 0.01
+  name "wooden box(7)"
+  size 0 0 0
+}
+DEF E_PUCK E-puck {
+  translation -0.458234 0.325608 -0.00122956
+  rotation 9.59284e-09 -9.58985e-09 1 -1.5704853071795863
+  controller "line_following_with_HIL"
+  window "botstudio"
+  camera_width 40
+  camera_height 1
+  groundSensorsSlot [
+    DistanceSensor {
+    }
+    E-puckGroundSensors {
+    }
+  ]
+}
