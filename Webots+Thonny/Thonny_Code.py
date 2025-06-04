@@ -1,13 +1,12 @@
-# A_algorthim.py
 """
 ESP32 MicroPython Controller for Path Planning Robot
 Implements Dijkstra's algorithm and robot control logic
 Communicates with Webots via serial for Hardware-in-the-Loop simulation
 
-Author: Generated for Robotics Assignment
+Author: Wouter van den Bosch and Bram Smit
 Compatible with: MicroPython v1.25.0 on ESP32
 Required: ujson module (built into most MicroPython versions)
-save on esp-32 as main.py
+save on esp-32 as main.py, then close thonny and run the webots script
 """
 
 from machine import Pin, UART
@@ -55,7 +54,7 @@ class PathPlannerESP32:
         self.no_intersection_counter = 0 # New: to debounce intersection counter reset
         self.turn_target_heading = 0
         self.line_search_counter = 0
-        self.intersection_processed = False # New flag to prevent double processing of same intersection
+        self.intersection_processed = False # flag to prevent double processing of same intersection
         
         # Timing
         self.last_update = ticks_ms()
