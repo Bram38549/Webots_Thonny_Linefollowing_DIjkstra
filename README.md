@@ -11,25 +11,20 @@ The system demonstrates:
 - Obstacle detection and automatic path re-planning
 - Real-time robot movement and debug visualization
 
-## Installation
-
-Before you begin, ensure you have the following software installed:
-
-Webots: (Link to Webots download page, e.g., https://cyberbotics.com/)
-
-Thonny IDE: (Link to Thonny download page, e.g., https://thonny.org/)
 
 ## Requirements
 
 ### MicroPython (ESP32)
 
 - MicroPython v1.25.0
+- Thonny IDE: (Link to Thonny download page, e.g., https://thonny.org/)
 - Built-in modules: ujson, machine, time, math
 
 ### Webots Controller (Python)
 
 - Python 3.10 or later
 - Webots R2023a or later
+- Webots: (Link to Webots download page, e.g., https://cyberbotics.com/)
 - pyserial module (install with pip install pyserial)
 
 ## Setup Instructions
