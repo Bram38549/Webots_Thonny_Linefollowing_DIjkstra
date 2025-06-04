@@ -3,7 +3,7 @@
 Webots Hardware-in-the-Loop Controller for Path Planning Robot
 Communicates with ESP32 via serial to send sensor data and receive movement commands
 
-Author: Bram Smit
+Author: Bram Smit and Wouter van den Bosch
 Compatible with: Webots R2023a+, Python 3.10+
 """
 
