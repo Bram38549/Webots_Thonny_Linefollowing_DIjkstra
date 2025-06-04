@@ -1,18 +1,14 @@
-#This project was given by school, the assignment was the simulate a robot using Webots and Thonny. 
+# Webots-ESP32-Linefollowing-Dijkstra
 
-The next things are included:
+This project is a school assignment focused on simulating a line-following robot using Webots, an ESP32 for decision-making, and Thonny for interfacing. It includes implementations for line-following and Dijkstra's algorithm for path planning.
 
--The E-puck Robot with ground and proximity sensors.
 
--A set track in black and white.
+## Installation
 
--The code for solving the problem only using Webots
+Before you begin, ensure you have the following software installed:
 
--The code for solving the problem using Thonny and Webots.
+Webots: (Link to Webots download page, e.g., https://cyberbotics.com/)
 
-   -Thonny will receive data off the sensors from Webots over UART.
-   
-   -On the esp32 is the decision making done and sends this to Webots over UART.
-   
-   -The robot solves the shortest path and stays on the line.
-   
+Thonny IDE: (Link to Thonny download page, e.g., https://thonny.org/)
+
+
